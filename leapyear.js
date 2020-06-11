@@ -1,5 +1,5 @@
 function trueOrFalse(year) {
-var results;
+    
 if (year % 4 == 0 && year % 100 == 0 && year % 400 == 0){
 var results = true;
 }
