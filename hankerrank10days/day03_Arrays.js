@@ -1,3 +1,5 @@
+// return the second largest number
+
 function getSecondLargestNums(nums) {
   var seondLarge = 0;
   for (var i = 0; i < nums.length - 1; i++) {
