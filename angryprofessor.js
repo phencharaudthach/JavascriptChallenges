@@ -12,10 +12,10 @@ function angryProfessor(k, a) {
     }
   }
   console.log(studentsOnTime, neededStudents);
-  if (studentsOnTime.length != neededStudents) {
-    return 'YES';
-  } else {
+  if (studentsOnTime.length === neededStudents) {
     return 'NO';
+  } else {
+    return 'YES';
   }
 }
 
