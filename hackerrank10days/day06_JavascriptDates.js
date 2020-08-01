@@ -2,13 +2,13 @@ function getDayName(dateString) {
   const dayName = new Date(dateString);
   // Write your code here
   const daysOfTheWeek = [
+    'Sunday',
     'Monday',
     'Tuesday',
     'Wednesday',
     'Thursday',
     'Friday',
     'Saturday',
-    'Sunday',
   ];
   return daysOfTheWeek[dayName.getDay()];
 }
