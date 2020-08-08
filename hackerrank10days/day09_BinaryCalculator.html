@@ -9,14 +9,14 @@
         width: 30%;
       }
 
-      .res {
+      #res {
         background-color: lightgray;
         border: solid;
         height: 48px;
         font-size: 20px;
       }
 
-      #btn,
+      #btn0,
       #btn1 {
         background-color: lightgreen;
         color: brown;
@@ -36,7 +36,7 @@
         color: red;
       }
 
-      #btns {
+      .btns {
         width: 25%;
         height: 36px;
         font-size: 18px;
@@ -45,7 +45,25 @@
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div id="res"></div>
+      <div id="btns">
+        <div class="upper">
+          <button class="btns" id="btn0" onClick="key('0')">0</button>
+          <button class="btns" id="btn1" onClick="key('1')">1</button>
+          <button class="btns" id="btnClr" onClick="cl()">C</button>
+          <button class="btns" id="btnEql" onClick="operatorFunx()">=</button>
+        </div>
+        <div class="lower">
+          <button class="btns" id="btnSum" onClick="key('+')">+</button>
+          <button class="btns" id="btnSub" onClick="key('-')">-</button>
+          <button class="btns" id="btnMul" onClick="('*')">*</button>
+          <button class="btns" id="btnDiv" onClick="('/')">/</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
 
 <script></script>
