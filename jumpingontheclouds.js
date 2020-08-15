@@ -5,10 +5,10 @@ let jumps = 0;
 for (let current = 0; current < c.length; current++){
    if ( c[current+2] === 0){
        jumps += 1;
-       console.log(jumps)
+    //    console.log(jumps)
    }
     }
-// return jumps;
+return jumps;
 }
 
 console.log(jumpingOnClouds([0, 0, 1, 0, 0, 1, 0]));
