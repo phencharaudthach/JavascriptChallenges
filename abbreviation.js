@@ -1,23 +1,24 @@
 function abbreviation(a, b) {
-var stringA = a.split("");
-var stringB = b.split("");
-var i = 0;
-var matchString = [];
-while (i < stringA.length){
-    // console.log(matchString.push(stringA[stringA.indexOf(stringB[i])]))
-    if (stringA.indexOf(stringB[i]) !== -1){
-        matchString.push(stringA[stringA.indexOf(stringB[i])])
+    a = a.toUpperCase();
+    let arrayA = a.split("");
+    let arrayB = b.split("");
+    for (var i = 0; i < arrayA.length; i++){
+        if (arrayA.length < arrayB.length){
+            return "NO";
+        }
+        if (arrayB[i] != arrayA[i]){
+            arrayA.splice(i, 1);
+            i++;
+        }
     }
-    i++
+    if (arrayA.toString() == arrayB.toString()){
+        return "Yes";
+    }
+    return "No"
 }
 
-console.log(matchString.toString());
-console.log(stringB.toString())
-if (matchString.toString() === stringB.toString()) return "YES"
-return "NO"
-}
-
-console.log(abbreviation("daBcd","ABC"));
+console.log(abbreviation("ELEDhEOXIAZQYWOPQIUSSGDCXOHSeYCKSCOYEMEDTGWPlJRZFILHZOBAVMFXdnxn",
+"ELEDEOXIAZQYWOPQIUSSGDCXOHSYCKSCOYEMEDTGWPJRZFILHZOBAVMFX"))
 
 // Make wordA match wordB
 // Can only remove letters 
